@@ -11,6 +11,6 @@
    <children>
       <ComboBox fx:id="combobox" layoutX="97.0" layoutY="126.0" onAction="#comboChanged" prefHeight="36.0" prefWidth="167.0" promptText="Select Name" />
       <Label fx:id="myLabel" layoutX="109.0" layoutY="52.0" prefHeight="36.0" prefWidth="167.0" text="Label" />
-      <ListView layoutX="8.0" layoutY="208.0" prefHeight="200.0" prefWidth="384.0" />
+      <ListView fx:id="listView" layoutX="8.0" layoutY="208.0" prefHeight="200.0" prefWidth="384.0" />
    </children>
 </AnchorPane>

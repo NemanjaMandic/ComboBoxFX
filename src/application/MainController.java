@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.SelectionMode;
 
 /**
  *
@@ -29,13 +30,16 @@ public class MainController implements Initializable {
    public Label myLabel;
    
    @FXML
-   public ListView listView;
+   public ListView<String> listView;
+   
     ObservableList<String> list = FXCollections.observableArrayList("Mark", "Tom", "John", "Jack");
   
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         combobox.setItems(list);
+        listView.setItems(list);
+        listView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
     }    
     
     @FXML
