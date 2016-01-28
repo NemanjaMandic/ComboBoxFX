@@ -14,6 +14,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 
 /**
  *
@@ -27,6 +28,8 @@ public class MainController implements Initializable {
    @FXML
    public Label myLabel;
    
+   @FXML
+   public ListView listView;
     ObservableList<String> list = FXCollections.observableArrayList("Mark", "Tom", "John", "Jack");
   
     
@@ -37,6 +40,7 @@ public class MainController implements Initializable {
     
     @FXML
     public void comboChanged(ActionEvent event){
-        myLabel.setText(combobox.getValue());
+        //combobox.getItems().addAll("Steve", "Mary", "Joan", "Mike");
+         myLabel.setText(combobox.getValue());
     }
 }

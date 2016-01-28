@@ -9,7 +9,8 @@
 
 <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
    <children>
-      <ComboBox fx:id="combobox" layoutX="109.0" layoutY="168.0" onAction="#comboChanged" prefHeight="36.0" prefWidth="167.0" promptText="Select Name" />
-      <Label fx:id="myLabel" layoutX="112.0" layoutY="97.0" prefHeight="36.0" prefWidth="167.0" text="Label" />
+      <ComboBox fx:id="combobox" layoutX="97.0" layoutY="126.0" onAction="#comboChanged" prefHeight="36.0" prefWidth="167.0" promptText="Select Name" />
+      <Label fx:id="myLabel" layoutX="109.0" layoutY="52.0" prefHeight="36.0" prefWidth="167.0" text="Label" />
+      <ListView layoutX="8.0" layoutY="208.0" prefHeight="200.0" prefWidth="384.0" />
    </children>
 </AnchorPane>
