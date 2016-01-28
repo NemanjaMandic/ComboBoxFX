@@ -9,6 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.MainController">
    <children>
-      <ComboBox fx:id="combobox" layoutX="138.0" layoutY="90.0" prefHeight="36.0" prefWidth="167.0" promptText="Select Name" />
+      <ComboBox fx:id="combobox" layoutX="109.0" layoutY="168.0" onAction="#comboChanged" prefHeight="36.0" prefWidth="167.0" promptText="Select Name" />
+      <Label fx:id="myLabel" layoutX="112.0" layoutY="97.0" prefHeight="36.0" prefWidth="167.0" text="Label" />
    </children>
 </AnchorPane>

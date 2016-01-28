@@ -13,6 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 
 /**
  *
@@ -23,15 +24,19 @@ public class MainController implements Initializable {
    @FXML
    public ComboBox<String> combobox;
     
+   @FXML
+   public Label myLabel;
+   
     ObservableList<String> list = FXCollections.observableArrayList("Mark", "Tom", "John", "Jack");
-    @FXML
-    private void handleButtonAction(ActionEvent event) {
-       
-    }
+  
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         combobox.setItems(list);
     }    
     
+    @FXML
+    public void comboChanged(ActionEvent event){
+        myLabel.setText(combobox.getValue());
+    }
 }
